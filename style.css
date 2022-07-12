@@ -196,14 +196,18 @@ main {
 
 
 @media only screen and (min-width: 40rem) {
+    body {
+        overflow: hidden;
+    }
+
     main {
         flex-direction: row-reverse;
     }
 
     /* Header section */
     .header {
-        margin-bottom: 13rem;
-        height: auto;
+        margin-bottom: 11rem;
+        height: 0rem;
 
         background-color: transparent;
     }
@@ -229,7 +233,7 @@ main {
     }
 
     .text h1 {
-        margin-bottom: 2.2rem;
+        margin-bottom: 1.5rem;
 
         font-size: 6rem;
         line-height: 7rem;
