@@ -27,16 +27,12 @@ mediaQuery.addEventListener("change", function(e) {
 
 /* This eventListener changes the border type depending on the page size (this is more for me as I swap between different page widths (mobile and desktop) ) */
 mediaQuery.addEventListener("change", function(e) {
-    if(e.matches) {
-        if(input.classList.contains("border-mobile")) {
-            input.classList.toggle("border-mobile");
-            input.classList.toggle("border-desktop");
-        }
+    if(e.matches && input.classList.contains("border-mobile")) {
+        input.classList.toggle("border-mobile");
+        input.classList.toggle("border-desktop");
     } else {
-        if(input.classList.contains("border-desktop")) {
-            input.classList.toggle("border-desktop");
-            input.classList.toggle("border-mobile");
-        }
+        input.classList.toggle("border-desktop");
+        input.classList.toggle("border-mobile");
     }
 })
 
